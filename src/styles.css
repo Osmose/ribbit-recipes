@@ -1,0 +1,8 @@
+.form-row {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.error {
+  color: #AA0000;
+}
