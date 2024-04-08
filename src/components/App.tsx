@@ -4,6 +4,7 @@ import { useAuthStore } from 'ribbit/state/auth';
 import React from 'react';
 import supabase from 'ribbit/supabase';
 import Header from 'ribbit/components/Header';
+import PageNotFound from 'ribbit/components/PageNotFound';
 
 export default function App() {
   // Initialize auth state
@@ -22,7 +23,8 @@ export default function App() {
     <div id="app-container">
       <Header />
       <Switch>
-        <Route component={Landing} />
+        <Route path="/" component={Landing} />
+        <Route component={PageNotFound} />
       </Switch>
     </div>
   );
